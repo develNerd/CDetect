@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.ceditect.ClassifyCediImageAnalyzer" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="de.crysxd.cameraXTracker.CameraFragment"/>
+
+        <TextView
+            android:id="@+id/labeled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"/>
+
+    <include
+        layout="@layout/top_action_bar_in_live_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"/>
+
+    <include
+        layout="@layout/bottom_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scan_box1"
+        android:layout_gravity="center"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
