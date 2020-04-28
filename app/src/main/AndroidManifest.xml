@@ -14,21 +14,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CurrencyDetectedActivity"></activity>
-        <activity android:name=".OnCediDetectedActivity" />
-        <activity android:name=".MainPageActivity" />
-        <activity android:name=".CediTectActivity" />
-        <activity android:name=".DownloadModelActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.BaseCurrencyActivity"></activity>
+        <activity android:name=".ui.currencyvalue.UpdateExchangeRates" />
+        <activity android:name=".ui.TexttoSpeech" />
+        <activity android:name=".ui.currencyvalue.GetExchangeRates" />
+        <activity android:name=".ui.currencyvalue.ExchangeRatesActivity" />
+        <activity android:name=".ui.printDummy" />
+        <activity android:name=".ui.CurrencyDetectedActivity" />
+        <activity android:name=".ui.OnCediDetectedActivity" />
+        <activity android:name=".ui.MainPageActivity" />
+        <activity android:name=".ui.CediTectActivity" />
+        <activity android:name=".ui.DownloadModelActivity" />
+        <activity android:name=".ui.MainActivity" />
         <activity
-            android:name=".IntroActivity"
-            android:screenOrientation="portrait">
+            android:name=".ui.IntroActivity"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
