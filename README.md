@@ -7,4 +7,4 @@ CediTect is a mobile app that aids users detect Cedi notes as well as provide li
 
 ## Screenshot
 
-
+https://play-lh.googleusercontent.com/PZ6bhKexMClM7G9zVQNVqOsU2qtFTOtIpdklBZTOl4InokB1jdAkODTPJWBTcWyT-w=w1366-h569-rw
